@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Almost Full-Stack Colors</title>
+
+    <link rel="stylesheet" href="/assets/style/style.css">
+</head>
+<body>
+
+    <script type="text/javascript" src="/vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/vendor/handlebars.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/text.min.js"></script>
+
+    <script id="template" type="text/x-handlebars-template">
+        <h1>COLORS!</h1>
+
+        <div class="color-container">
+            {{#each colors}}
+                <div class="color-area" style="background-color: {{value}}">
+                    <p>{{color}}</p>
+                </div>
+            {{/each}}
+        </div>
+
+        <h3 class="hidden">COLORS!</h3>
+    </script>
+</body>
+</html>
